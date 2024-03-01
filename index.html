@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <form action="">
+        <div class="row container">
+            <u>
+                <h2>"Your information Form"</h2>
+            </u>
+            <div class="col-md-6 col-sm-12 box">
+
+                <input required placeholder="selet city" type="text" name="" id="option1" list="option">
+                <datalist id="option">
+                    <option value="Karachi">
+                    <option value="Islamabad">
+                    <option value="Lahore">
+                    <option value="Multan">
+                    <option value="Hyderabad">
+                    <option value="Sialkot">
+                        <!-- Add more options as needed -->
+                </datalist>
+                <input placeholder="select course" type="text" name="" id="option2" list="courses" required>
+                <datalist id="courses">
+                    <option value="Web-App Devlopment">
+                    <option value="Graphic Designing">
+                    <option value="Software">
+                    <option value="Hacking">
+                    <option value="Cyber Sicurity">
+                </datalist>
+            </div>
+            <div class="col-md-6 box">
+
+                <input placeholder="full name" type="text" name="" id="option3" required>
+
+                <input placeholder="father's name" type="text" name="" id="option4" required>
+            </div>
+            <div class="col-md-6 col-xs-12 col-sm-12 box">
+
+                <input placeholder="email" type="text" name="email" id="option5" required>
+
+                <input placeholder="CONTACT NO.eg;0333-1231234" type="tel" name="phonenumber" pattern="[0-9]+"
+                    id="option6" maxlength="11" required>
+            </div>
+            <div class="col-md-6 col-xs-12 col-sm-12 box">
+
+                <input placeholder="CNIC" type="tel" name="cnicnumber" id="option7" required>
+
+                <input placeholder="father's CNINC(optional)" type="tel" name="fathercnicnumber" id="option8" required>
+            </div>
+            <div class="col-md-6 col-xs-12 col-sm-12 box">
+
+                <input placeholder="date of birth" type="date" name="" id="option9" required>
+
+                <input placeholder="select gender" type="text" name="" id="option10" list="option100" required>
+                <datalist name="" id="option100">
+                    <option value="MALE">
+                    <option value="FEMALE">
+                    <option value="Prefer Not To Say">
+                </datalist>
+            </div>
+            <div class="col-md-6 col-xs-12 col-sm-12 long-box">
+
+                <input placeholder="Address:flat/bl st.area,city" type="text" name="" id="option11" required>
+            </div>
+            <div class="col-md-6 col-xs-12 col-sm-12 long-box">
+
+                <input placeholder="last qualifiation" type="text" name="" id="option12" required>
+            </div>
+            <div class="col-md-6 col-xs-12 col-sm-12 long-box">
+                <label for="option13">Do You Have A Laptop?</label>
+                <input placeholder="Type 'YES' or 'NO' Only:" type="text" id="option13" name="specificAnswer"
+                    pattern="yes|no|YES|NO|Yes|No" required>
+
+            </div>
+            <div class="end">
+                <label class="file-input-label" for="fileInput">
+                    <span id="uploadText">Upload Your Picture</span>
+                    <div class="plus-symbol">+</div>
+                </label>
+                <input class="file" type="file" id="fileInput" onchange="updateUploadText(this)">
+            </div>
+            <br>
+            <input class="button" type="submit" onclick="add()">
+        </div>
+
+    </form>
+
+
+
+
+
+
+    <script src="app.js" type="module"></script>
+</body>
+
+</html>
